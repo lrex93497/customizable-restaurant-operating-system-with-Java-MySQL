@@ -173,7 +173,7 @@ The system should work well in daily operation, the graph above should also prov
 
 <h3 id="login"> How to use: Open client and Login</h3>
 To run the client, click the Client_Waiter.jar, Client_Management.jar, Client_Kitchen.jar, or Client_Cashier.jar depends on which client is needed to run. These 
-executable JAR can be found in the respective folder name in the release.<br /><br />
+executable .jar can be found in the respective folder name in the executable jar release(Or compile by using source code in source code release).<br /><br />
 When opening any of the clients, the first window that appears is the login window, shown as below picture:
 <br /><img src="photo/login_gui.PNG" width="700"><br />
 
