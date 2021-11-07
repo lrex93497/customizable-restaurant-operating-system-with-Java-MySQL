@@ -26,7 +26,8 @@ efficiency of the cashier. All clients in this system consist login system which
 each client has a clock for better time management of the operator.<br /><br />
 
 Below is the picture consisting  of all clients and login window:<br />
-<img src="photo/all_gui.PNG" width="700">
+<img src="photo/all_gui.PNG" width="700"><br />
+All GUI support auto-resize.
 <br /><br />
 
 
