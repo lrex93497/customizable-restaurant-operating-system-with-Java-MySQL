@@ -25,8 +25,9 @@ that can automatically calculate the money each table has to pay before the cust
 efficiency of the cashier. All clients in this system consist login system which can prevent non-employees use the system unintentionally in daily operation. Lastly, 
 each client has a clock for better time management of the operator.<br /><br />
 
-Below is the picture consisting  of all clients and login window:<br />
-<img src="photo/all_gui.PNG" width="700">
+Below is the picture consisting of all clients and login window:<br />
+<img src="photo/all_gui.PNG" width="700"><br />
+All GUI support auto-resize.
 <br /><br />
 
 
