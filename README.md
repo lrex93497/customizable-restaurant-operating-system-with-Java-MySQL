@@ -223,7 +223,7 @@ as shown:
 <br /><img src="photo/client_management_gui_5.PNG" width="550"><br />
 
 Select ingredient to edit, its original amount will then be given. Edit their amount then click "edit" to confirm.
-<br />
+<br /><br />
 Be aware that the maximum allowed variety of ingredients in add or edit mode is 150 only. For food_name, food_type, and event, the maximum length allowed is 200 char, 
 you cannot type exist that in add/edit window. In the edit/add window, if the user enters null input or starts input with numbers, an error window pop-up and does not 
 allow the user to apply, this can prevent errors happen. In this case, close the pop-up and re-enter the proper value, then try to apply again.
