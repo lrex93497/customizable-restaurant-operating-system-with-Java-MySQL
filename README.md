@@ -9,6 +9,7 @@
 ### [How to use: Waiter client](#waiter)
 ### [How to use: Kitchen client](#kitcten)
 ### [How to use: Casher client](#casher)
+### [How to use: Notice on selecting an item](#notice)
 ### [System Requirement](#requirement)
 ### [License, statement, and special thanks](#licen)
 
@@ -361,6 +362,10 @@ To receive the payment, the cashier needs to use the number button in the client
 Once the customer table's payment was made, the respective order(s) will not be removed by the cashier client, instead, the waiter client when the new customer orders at the same table. Before the new customer orders, the respective customer table will be in the "PAID"(green) stage shown in the mentioned section of the cashier client. This allows review of the orders in that customer table before the next customer arrives if needed.
 <br /><br />
 
+
+<h3 id="notice"> Notice on selecting an item</h3>
+Please notice that in management, waiter, and cashier client, any function that requires selection of item(row) can only process one row at once. In case of multiple rows selected, the client will consider only the highest row is selected.
+<br /><br />
 
 <h3 id="requirement"> System Requirement</h3>
 Windows10 with Java installed, recommend Java 17<br />
