@@ -354,17 +354,25 @@ cancel the order, depending on actual data and situation. Canceled order will no
 in the payment calculation. On the section that has many number buttons, there is a label that shows either in red "NOT PAID", which means that that customer table was 
 not paid or in green "PAID" for a successful payment that was paid from the respective table.<br /><br /> 
 
-On the lower part of the client, on the left side shows the price for only food, service charge in percentage, and Original$ (original price, price after service charge). Then to the right side, the discount in percentage. Total$ is the original price after discount, which is the total amount of money that should be received from the respective customer payment. <br /><br />
+On the lower part of the client, on the left side shows the price for only food, service charge in percentage, and Original$ (original price, price after service 
+charge). Then to the right side, the discount in percentage. Total$ is the original price after discount, which is the total amount of money that should be received 
+from the respective customer payment. <br /><br />
 
-To receive the payment, the cashier needs to use the number button in the client and input numbers into the label near "Received $:", use "del" to remove the last number/dot. After entering the received payment, press "Receive". If payment is not enough, pop-up "Received $ is nothing" or if the input is incomplete, pop-up "Incomplete input" gives out, to prevent receive. Once payment is enough, a change will be calculated and shown out near "Change:", please return the change to the customer according to this value. After successful payment, the "NOT PAID"(red) will change to "PAID"(green). For the mentioned, please see the below picture:
+To receive the payment, the cashier needs to use the number button in the client and input numbers into the label near "Received $:", use "del" to remove the last 
+number/dot. After entering the received payment, press "Receive". If payment is not enough, pop-up "Received $ is nothing" or if the input is incomplete, pop-up 
+"Incomplete input" gives out, to prevent receive. Once payment is enough, a change will be calculated and shown out near "Change:", please return the change to the 
+customer according to this value. After successful payment, the "NOT PAID"(red) will change to "PAID"(green). For the mentioned, please see the below picture:
 <br /><img src="photo/client_cashier_gui_1.PNG" width="650"><br />
 
-Once the customer table's payment was made, the respective order(s) will not be removed by the cashier client, instead, the waiter client when the new customer orders at the same table. Before the new customer orders, the respective customer table will be in the "PAID"(green) stage shown in the mentioned section of the cashier client. This allows review of the orders in that customer table before the next customer arrives if needed.
+Once the customer table's payment was made, the respective order(s) will not be removed by the cashier client, instead, the waiter client when the new customer orders 
+at the same table. Before the new customer orders, the respective customer table will be in the "PAID"(green) stage shown in the mentioned section of the cashier 
+client. This allows review of the orders in that customer table before the next customer arrives if needed.
 <br /><br />
 
 
-<h3 id="notice"> Notice on selecting an item</h3>
-Please notice that in management, waiter, and cashier client, any function that requires selection of item(row) can only process one row at once. In case of multiple rows selected, the client will consider only the highest row is selected.
+<h3 id="notice"> How to use: Notice on selecting an item</h3>
+Please notice that in management, waiter, and cashier client, any function that requires selection of item(row) can only process one row at once. In case of multiple 
+rows selected, the client will consider only the highest row is selected.
 <br /><br />
 
 <h3 id="requirement"> System Requirement</h3>
