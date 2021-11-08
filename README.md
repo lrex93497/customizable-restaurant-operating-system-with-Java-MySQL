@@ -72,7 +72,7 @@ and open it, the login window will then close itself. Then the client will use t
 <br /><br />
 
 
-The working principle of this system was showed in below graph (suggested to download and open the /photo/principle.png below showed alone for magnified view):<br />
+The working principle of this system after login was showed in below graph (suggested to download and open the /photo/principle.png below showed alone for magnified view):<br />
 <img src="photo/principle.png" width="1200">
 <br />
 For the tables in this system:<br /><br />
