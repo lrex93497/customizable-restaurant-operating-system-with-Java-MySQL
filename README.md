@@ -68,7 +68,7 @@ Firstly, each client must be login before access to the client, shown as below:<
 <br />
 The login.class in each client will first check with the server if the account, password, connection information is valid, if an error return indicates a wrong login/connection 
 information, it won't pass information and call the client. If no error, it will pass information (connection information, account, password) to the respective client 
-and open it, the login window will then close itself.
+and open it, the login window will then close itself. Then the client will use the connection information given to communicate to the server.
 <br /><br />
 
 
