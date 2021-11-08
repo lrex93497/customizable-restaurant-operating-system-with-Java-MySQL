@@ -64,7 +64,7 @@ can works properly.<br /><br />
 
 <h3 id="how"> How this System works</h3>
 Firstly, each client must be login before access to the client, shown as below:<br />
-<img src="photo/p_login.png" width="500">
+<img src="photo/principle_login.png" width="500">
 <br />
 The login.class in each client will first check with the server if the account, password, connection information is valid, if an error return indicates a wrong login/connection 
 information, it won't pass information and call the client. If no error, it will pass information (connection information, account, password) to the respective client 
