@@ -9,6 +9,7 @@
 ### [How to use: Waiter client](#waiter)
 ### [How to use: Kitchen client](#kitcten)
 ### [How to use: Casher client](#casher)
+### [How to use: Notice on selecting an item](#notice)
 ### [System Requirement](#requirement)
 ### [License, statement, and special thanks](#licen)
 
@@ -25,7 +26,7 @@ that can automatically calculate the money each table has to pay before the cust
 efficiency of the cashier. All clients in this system consist login system which can prevent non-employees use the system unintentionally in daily operation. Lastly, 
 each client has a clock for better time management of the operator.<br /><br />
 
-Below is the picture consisting of all clients and login window:<br />
+Below is the picture consisting  of all clients and login window:<br />
 <img src="photo/all_gui.PNG" width="700"><br />
 All GUI support auto-resize.
 <br /><br />
@@ -66,9 +67,9 @@ can works properly.<br /><br />
 Firstly, each client must be login before access to the client, shown as below:<br />
 <img src="photo/principle_login.png" width="500">
 <br />
-The login.class in each client will first check with the server if the account, password, connection information is valid, if an error return indicates a wrong login/connection 
-information, it won't pass information and call the client. If no error, it will pass information (connection information, account, password) to the respective client 
-and open it, the login window will then close itself. Then the client will use the connection information given to communicate with the server.
+The login.class in each client will first check with the server if the account, password, connection information is valid, if an error return indicates a wrong 
+login/connection information, it won't pass information and call the client. If no error, it will pass information (connection information, account, password) to the 
+respective client and open it, the login window will then close itself. Then the client will use the connection information given to communicate with the server.
 <br /><br />
 
 
@@ -361,6 +362,10 @@ To receive the payment, the cashier needs to use the number button in the client
 Once the customer table's payment was made, the respective order(s) will not be removed by the cashier client, instead, the waiter client when the new customer orders at the same table. Before the new customer orders, the respective customer table will be in the "PAID"(green) stage shown in the mentioned section of the cashier client. This allows review of the orders in that customer table before the next customer arrives if needed.
 <br /><br />
 
+
+<h3 id="notice"> Notice on selecting an item</h3>
+Please notice that in management, waiter, and cashier client, any function that requires selection of item(row) can only process one row at once. In case of multiple rows selected, the client will consider only the highest row is selected.
+<br /><br />
 
 <h3 id="requirement"> System Requirement</h3>
 Windows10 with Java installed, recommend Java 17<br />
