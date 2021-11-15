@@ -205,7 +205,7 @@ To start with, choose food_list. Then click the button "Add" to add a new food i
 For food type, in default, only these options should be input exactly: "appetizer", "main_course", "dessert", "beverage", "others", "special". In case other words were 
 entered, that food item can only be seen in the "all" category in waiter client. Select >new< and click "+" for adding a new ingredient at the pop-up window. Then 
 enter the number of ingredients it will use. Please remind that the ingredient name cannot have space. Since system version v1.0.1, invalid input (null, empty, start 
-with a number, contains space) will be detected and a pop-up window pop-out to prevent input when adding new ingredient name in ingredients_management and food_list, 
+with a number, contains space) will be detected and a pop-up window pop-out with respective reason to prevent input when adding new ingredient name in ingredients_management and food_list, 
 or when in editing ingredient column name.<br />
 <img src="photo/client_management_gui_2.PNG" width="550"><br />
 
