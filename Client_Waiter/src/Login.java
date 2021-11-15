@@ -1,6 +1,6 @@
 //customizable-restaurant-operating-system-with-Java-MySQL v1.0.0
 //by lrex93497 @github
-//Client_Waiter login
+//Client_Waiter login v1.0.0
 //release under GPLv2
 
 import javax.swing.*;
