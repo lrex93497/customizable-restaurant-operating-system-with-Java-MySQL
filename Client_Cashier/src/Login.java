@@ -1,6 +1,6 @@
-//customizable-restaurant-operating-system-with-Java-MySQL v1.0.1
+//customizable-restaurant-operating-system-with-Java-MySQL v1.0.0
 //by lrex93497 @github
-//Client_Cahsier Login v1.0.0
+//Client_Waiter login v1.0.0
 //release under GPLv2
 
 import javax.swing.*;
@@ -71,7 +71,7 @@ public class Login implements ActionListener {
         //loginFrame.setSize(500,500);
         loginFrame.setMinimumSize(new Dimension(1050,500));
         loginFrame.setLayout( new GridLayout(3,3) );  
-        loginFrame.setTitle("Cashier Client : Login");
+        loginFrame.setTitle("Waiter Client : Login");
         loginFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  
         loginFrame.setResizable(true);
 
@@ -236,6 +236,6 @@ public class Login implements ActionListener {
         }
 
         loginFrame.dispose();
-        new ClientCashier(conInf, account, password);
+        new ClientWaiter(conInf, account, password);
     }
 }
