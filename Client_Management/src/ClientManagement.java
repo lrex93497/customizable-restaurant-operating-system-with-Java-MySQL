@@ -1,6 +1,6 @@
-//customizable-restaurant-operating-system-with-Java-MySQL v1.0.0
+//customizable-restaurant-operating-system-with-Java-MySQL v1.0.1
 //by lrex93497 @github
-//Client_Management
+//Client_Management v1.0.1
 //release under GPLv2
 
 import javax.swing.*;
@@ -462,7 +462,7 @@ class ClientManagement implements ActionListener{
                             continue;
                         }
                         else{
-                            stmt.executeUpdate("ALTER TABLE "+ currentTable + " ADD COLUMN "+ ingredientToAddArray[i] +" DOUBLE NULL DEFAULT '0';");
+                            stmt.executeUpdate("ALTER TABLE "+ currentTable + " ADD COLUMN `"+ ingredientToAddArray[i] +"` DOUBLE NULL DEFAULT '0';");
                         }
                     }
 
@@ -630,13 +630,14 @@ class ClientManagement implements ActionListener{
             if(String.valueOf(ingreidentsNamecomboBox.getSelectedItem()) == ">new<"){
                 // adding type of ingreident in pair of label and textfield 
                 String newIngredientName = JOptionPane.showInputDialog("Please enter new ingredient name");
-                //if cancel or empty or start with number
+                //if cancel or empty or start with number or have space
                 if(newIngredientName == null){
                     addRecordPanel.add(ingreidentsNamecomboBox);
                     addRecordPanel.add(ingreidentAddButton);
                     ingredientToAddArrayCounter -= 1;
                     addRecordPanel.repaint();
                     addRecordPanel.doLayout();
+                    JOptionPane.showMessageDialog(null, "Null input", "Error", JOptionPane.WARNING_MESSAGE);
                     return;
                 }
                 if(newIngredientName.isEmpty()){
@@ -645,6 +646,16 @@ class ClientManagement implements ActionListener{
                     ingredientToAddArrayCounter -= 1;
                     addRecordPanel.repaint();
                     addRecordPanel.doLayout();
+                    JOptionPane.showMessageDialog(null, "Empty input", "Error", JOptionPane.WARNING_MESSAGE);
+                    return;
+                }
+                if(newIngredientName.contains(" ")){
+                    addRecordPanel.add(ingreidentsNamecomboBox);
+                    addRecordPanel.add(ingreidentAddButton);
+                    ingredientToAddArrayCounter -= 1;
+                    addRecordPanel.repaint();
+                    addRecordPanel.doLayout();
+                    JOptionPane.showMessageDialog(null, "New ingredient name cannot contain space", "Error", JOptionPane.WARNING_MESSAGE);
                     return;
                 }
                 if(Character.isLetter(newIngredientName.charAt(0)) == false){
@@ -653,7 +664,7 @@ class ClientManagement implements ActionListener{
                     ingredientToAddArrayCounter -= 1;
                     newIngredientName = "";
                     addRecordPanel.repaint();
-                    JOptionPane.showMessageDialog(null, "New ingredient cannot start with number", "Error", JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "New ingredient name cannot start with number", "Error", JOptionPane.WARNING_MESSAGE);
                     return;
                 }
 
@@ -919,6 +930,25 @@ class ClientManagement implements ActionListener{
     private void applyEditIngredientName() {
         String NameEdited = ingreidentEditNameTextfield.getText();
         String selectedToEdit = String.valueOf(ingreidentsNamecomboBox.getSelectedItem());
+
+        //detect invalid input, return if detected
+        if(NameEdited == null){
+            JOptionPane.showMessageDialog(null, "Null input", "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        if(NameEdited.isEmpty()){
+            JOptionPane.showMessageDialog(null, "Empty input", "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        if(NameEdited.contains(" ")){
+            JOptionPane.showMessageDialog(null, "New ingredient name cannot contain space", "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        if(Character.isLetter(NameEdited.charAt(0)) == false){
+            JOptionPane.showMessageDialog(null, "New ingredient name cannot start with number", "Error", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");  
